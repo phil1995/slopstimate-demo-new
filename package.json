@@ -1,0 +1,38 @@
+{
+  "name": "slopstimate-demo-new",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "npm run build && wrangler dev --ip 0.0.0.0",
+    "dev:ui": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.client.json && tsc -p tsconfig.worker.json && tsc -p tsconfig.tools.json",
+    "test": "vitest run",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:check": "npm run build && wrangler deploy --dry-run",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "svelte": "^5.57.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261013.1",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.28.2",
+    "miniflare": "^5.20261006.2-beta",
+    "prettier": "^3.9.10",
+    "prettier-plugin-svelte": "^4.1.1",
+    "svelte-check": "^4.7.6",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4",
+    "wrangler": "^4.150.0"
+  }
+}
