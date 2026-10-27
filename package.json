@@ -22,7 +22,7 @@
     "svelte": "^5.57.2"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^5.20261013.1",
+    "@cloudflare/workers-types": "^5.20261016.1",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@types/node": "^26.6.5",
     "esbuild": "^0.28.2",
@@ -33,6 +33,6 @@
     "typescript": "^6.0.3",
     "vite": "^8.3.4",
     "vitest": "^5.0.4",
-    "wrangler": "^4.150.0"
+    "wrangler": "^4.151.1"
   }
 }
