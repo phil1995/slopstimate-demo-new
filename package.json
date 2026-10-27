@@ -29,7 +29,7 @@
     "miniflare": "^5.20261006.2-beta",
     "prettier": "^3.9.10",
     "prettier-plugin-svelte": "^4.1.1",
-    "svelte-check": "^4.7.6",
+    "svelte-check": "^4.7.7",
     "typescript": "^6.0.3",
     "vite": "^8.3.4",
     "vitest": "^5.0.4",
